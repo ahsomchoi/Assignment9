@@ -46,8 +46,8 @@ io.on("connection", function(socket) {
 				}
 		    });
 		});
-	})
-})
+	});
+});
 
 http.listen(3000);
 
@@ -57,5 +57,4 @@ app.get("/todos.json", function (req, res) {
 	res.json(toDos);
     });
 });
-
 
